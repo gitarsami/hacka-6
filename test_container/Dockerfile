@@ -3,4 +3,4 @@ MAINTAINER Sami Arpiainen
 RUN apk update && apk upgrade
 RUN apk add python py-pip
 RUN pip install redis
-RUN tail -f /dev/null &
+CMD ["tail", "-f", "/dev/null", "&"]
